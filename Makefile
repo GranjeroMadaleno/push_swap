@@ -11,6 +11,15 @@ INCLUDE = push_swap.h
 
 # FILES TO COMPILE
 SRCS =	srcs/main.c \
+		srcs/algorithm/rythm.c \
+		srcs/algorithm/special_cases.c \
+		srcs/moves/lists.c \
+		srcs/moves/moves_for_a.c \
+		srcs/moves/moves_for_b.c \
+		srcs/parser/parser.c \
+		srcs/checks.c \
+		srcs/utils.c
+
 
 #OBJECTS (*.o)
 OBJS = $(SRCS:.c=.o)

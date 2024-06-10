@@ -1,21 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd_front_bonus.c                            :+:      :+:    :+:   */
+/*   rythm.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: andefern <andefern@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/05/25 16:33:40 by andefern          #+#    #+#             */
-/*   Updated: 2024/06/05 12:51:39 by andefern         ###   ########.fr       */
+/*   Created: 2024/06/10 10:55:28 by andefern          #+#    #+#             */
+/*   Updated: 2024/06/10 11:34:21 by andefern         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "push_swap.h"
 
-void	ft_lstadd_front(t_list **lst, t_list *new)
+void	rythm(t_stack **stack_a, t_stack **stack_b, int all_ints, int bit)
 {
-	if (!new || !lst)
+	int	i;
+
+	i = 0;
+	if (sort(stack_a) || bit >= 16)
 		return ;
-	new->next = *lst;
-	*lst = new;
+	while (i++ < all_ints)
+	{
+		if ((trick(stack_a)->num >> bit) & 1)
+			ra(stack_a);
+		else
+			pb(stack_a, stack_b);
+	}
+	while (left(stack_a) < all_ints)
+		pa(stack_a, stack_b);
+	rythm(stack_a, stack_b, all_ints, ++bit);
 }

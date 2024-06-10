@@ -6,7 +6,7 @@
 /*   By: andefern <andefern@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/17 12:00:12 by andefern          #+#    #+#             */
-/*   Updated: 2024/05/20 12:03:50 by andefern         ###   ########.fr       */
+/*   Updated: 2024/06/10 13:09:48 by andefern         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,7 +81,7 @@ char	*newline(char *temp);
 char	*ft_static(char	*str);
 char	*get_next_line(int fd);
 // FT_PRINTF
-int	ft_printf(const char *print, ...);
+int		ft_printf(const char *print, ...);
 void	pf_putchar(char c);
 void	pf_putstr(char *s);
 int		pf_putnbr(int n);
