@@ -6,7 +6,7 @@
 /*   By: andefern <andefern@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/10 09:59:12 by andefern          #+#    #+#             */
-/*   Updated: 2024/06/10 11:58:43 by andefern         ###   ########.fr       */
+/*   Updated: 2024/06/11 12:39:11 by andefern         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ void	pb(t_stack **stack_a, t_stack **stack_b)
 
 	top_a = trick(stack_a);
 	top_b = *stack_b;
-	while (top_b->next != trick(stack_a))
+	while (top_b->next != trick(stack_b))
 		top_b = top_b->next;
 	top_b->num = top_a->num;
 	trick(stack_a)->num = 0;

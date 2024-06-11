@@ -6,7 +6,7 @@
 /*   By: andefern <andefern@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/10 10:16:08 by andefern          #+#    #+#             */
-/*   Updated: 2024/06/10 13:08:14 by andefern         ###   ########.fr       */
+/*   Updated: 2024/06/11 12:51:48 by andefern         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,18 +33,24 @@ void	check_dups(t_stack **stack_a)
 {
 	int		checks;
 	t_stack	*latest;
+	t_stack	*foe;
 
-	latest = *stack_a;
-	while (latest->next)
+	foe = *stack_a;
+	while (foe->next)
 	{
-		checks = latest->num;
-		latest = latest->next;
-		if (checks == latest->num)
+		checks = foe->num;
+		latest = foe->next;
+		while (latest)
 		{
-			morgan_freeman(*stack_a);
-			ft_printf("Error\n");
-			exit(1);
+			if (checks == latest->num)
+			{
+				morgan_freeman(*stack_a);
+				ft_printf("Error\n");
+				exit(1);
+			}
+			latest = latest->next;
 		}
+		foe = foe->next;
 	}
 }
 
