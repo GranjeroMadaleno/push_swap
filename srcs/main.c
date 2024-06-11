@@ -6,18 +6,18 @@
 /*   By: andefern <andefern@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/20 10:50:15 by andefern          #+#    #+#             */
-/*   Updated: 2024/06/10 13:31:29 by andefern         ###   ########.fr       */
+/*   Updated: 2024/06/11 10:55:09 by andefern         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void	initializer(t_stack **stack_a, t_stack **stack_b, int all_inits)
+void	initializer(t_stack **stack_a, t_stack **stack_b, int all_ints)
 {
 	check_limits(stack_a);
 	check_dups(stack_a);
-	*stack_a = index_ints(all_inits, stack_a);
-	init_stack_b(all_inits, stack_b);
+	*stack_a = index_ints(all_ints, stack_a);
+	init_stack_b(all_ints, stack_b);
 }
 
 void	selector(t_stack **stack_a, t_stack **stack_b, int all_ints)

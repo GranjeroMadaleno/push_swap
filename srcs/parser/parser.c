@@ -6,7 +6,7 @@
 /*   By: andefern <andefern@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/01 12:28:32 by andefern          #+#    #+#             */
-/*   Updated: 2024/06/10 13:14:39 by andefern         ###   ########.fr       */
+/*   Updated: 2024/06/11 10:38:13 by andefern         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,7 +61,7 @@ void	free_split(char **split)
 	int	i;
 
 	i = -1;
-	while (split[i++])
+	while (split[++i])
 		free(split[i]);
 	free(split);
 }
