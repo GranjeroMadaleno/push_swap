@@ -6,7 +6,7 @@
 /*   By: andefern <andefern@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/20 10:50:15 by andefern          #+#    #+#             */
-/*   Updated: 2024/06/11 12:39:22 by andefern         ###   ########.fr       */
+/*   Updated: 2024/06/17 10:06:34 by andefern         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,50 +52,3 @@ int	main(int argc, char const *argv[])
 	morgan_freeman(stack_b);
 	return (0);
 }
-
-/* 
-t_push	*new_node(void)
-{
-	t_push	*node;
-
-	node = malloc(sizeof(t_push *));
-	node->num = 0;
-	node->index = 0;
-	return (node);
-}
-
-void	new_list(t_push **list, int count)
-{
-	t_push	*node;
-
-	node = new_node();
-	*list = node;
-	while (count > 1)
-	{
-		node->next = new_node();
-		node = node->next;
-		count--;
-	}
-	node->next = *list;
-}
-
-int	main(int argc, char **argv)
-{
-	t_push	*stack_a;
-	int		i;
-
-	if (argc < 2 || check_num(argv) == 1)
-		return (0);
-	stack_a = NULL;
-	new_list(&stack_a, 3);
-	i = 0;
-	while (stack_a)
-	{
-		printf("soy el nodo %d y tengo el valor %d\n", i, stack_a->num);
-		stack_a = stack_a->next;
-		i++;
-	}
-	ft_printf("xd\n");
-	return (0);
-}
- */

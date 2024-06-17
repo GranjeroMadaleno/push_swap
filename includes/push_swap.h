@@ -6,7 +6,7 @@
 /*   By: andefern <andefern@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/20 10:50:21 by andefern          #+#    #+#             */
-/*   Updated: 2024/06/11 12:36:46 by andefern         ###   ########.fr       */
+/*   Updated: 2024/06/17 10:06:57 by andefern         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,8 +58,6 @@ t_stack	*trick(t_stack **stack);
 t_stack	*base(t_stack **stack);
 int		left(t_stack **stack);
 int		sort(t_stack **stack);
-//int		str_isdigit(int c);
-//int		check_num(char **argv);
 // ALGORITHM(RADIX)
 void	rythm(t_stack **stack_a, t_stack **stack_b, int all_ints, int bit);
 

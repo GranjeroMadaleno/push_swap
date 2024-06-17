@@ -6,7 +6,7 @@
 /*   By: andefern <andefern@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/01 12:28:32 by andefern          #+#    #+#             */
-/*   Updated: 2024/06/11 12:29:38 by andefern         ###   ########.fr       */
+/*   Updated: 2024/06/17 10:07:51 by andefern         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -100,32 +100,3 @@ void	init_stack_b(int all_ints, t_stack **stack_b)
 	while (++latest_int <= all_ints)
 		new_node(0, 0, stack_b);
 }
-
-/* int	str_isdigit(char *str)
-{
-	int	i;
-
-	i = 0;
-	while (str[i])
-	{
-		if (ft_isdigit(str[i]) != 1)
-			return (1);
-		i++;
-	}
-	return (0);
-}
-
-int	check_num(char **argv)
-{
-	int	i;
-
-	i = 1;
-	while (argv[i])
-	{
-		if (str_isdigit(argv[i]) == 1)
-			return (1);
-		i++;
-	}
-	return (0);
-}
- */
